@@ -75,7 +75,7 @@ html{
 .main h1{
     font-weight: bold;
     margin: 10% 5% 2% 5%;
-    font-size: calc(25px + 1vw);
+    font-size: calc(20px + 1vw);
 }
 .main h2{
     font-weight: bold;

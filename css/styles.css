@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content 30vh min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title menu menu menu"
+      "bghead bghead bghead bghead"
+      "main main main main"
+      "pie pie pie pie";
+  }
+  
+  .title {
+    grid-area: title;
+    background-color: black;
+    padding: 5px 20px;
+    box-shadow: 0px 0px 20px black;
+}
+  
+  .menu {
+    grid-area: menu;
+    background-color: black;
+    text-align: right;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 20px black;
+}
+  
+  
+  .bghead{
+    grid-area: bghead;
+    background-image: url("../media/ac-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 20px black;
+
+}
+  
+  .main{
+    grid-area: main;
+    box-shadow: 0px 0px 20px black;
+
+}
+  
+  .pie {
+    grid-area: pie;
+    margin-top: 5%;
+}
+  
+
+.btn-primary{
+   margin: 2px 2px;
+}
+.main img{
+    margin-left: 20px;
+}
+.pjs{
+    font-size: calc(12px + 0.1vw);
+    margin-left: 20px;
+}
+.pjs span{
+    font-weight: bold;
+}
+
+.main h1{
+    font-weight: bold;
+    margin: 10% 5% 2% 5%;
+    font-size: calc(25px + 1vw);
+}
+.main h2{
+    font-weight: bold;
+    margin: 10% 5% 2% 5%;
+    font-size: calc(18px + 1vw);
+}
+.main h3{
+    font-weight: bold;
+    margin: 10% 5% 2% 5%;
+    font-size: calc(12px + 1vw);
+}
+.main p{
+    margin: 20px 10px 10px 10px;
+    width: 90%;
+    text-align: justify;
+    margin: 5%;
+}
+.main ul, ol{
+    text-align: justify;
+    list-style-position: inside;
+    width: 90%;
+    margin: 5%;
+}
+.main img{
+    display: block;
+    margin: auto;
+    width: 20vw;
+    min-width: 150px;
+}
+
+.panel-title{
+    font-weight: bold;
+}
+
+
+.imgs-bottom{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin: 5% 0%;
+}
+
+.imgs-bottom img{
+    width: 30%;
+    min-width: 50px;
+}
+
+.compartir button{
+   margin: 5px 5px;
+}
+
+
+
+footer{
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: calc(12px + 0.1vw);
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+
+
+
+
+/*--767 Screen---------------------------------------*/
+
+@media only screen and (max-width:767px){
+    .bghead{
+    background-position: center;
+    }
+}
